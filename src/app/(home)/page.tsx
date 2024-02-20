@@ -52,30 +52,30 @@ export default function Home() {
         />
         <div className="w-[60%] bg-slate-100 p-4 rounded-lg flex flex-col items-center gap-10">
           <div className="flex items-center justify-between gap-6">
-            <h1 className="text-5xl text-black font-bold">Sortear</h1>
+            <h1 className="text-5xl text-black font-bold max-md:text-sm">Sortear</h1>
             <Input
               min={1}
               type="number"
-              className="text-center"
+              className="text-center w-10"
               value={quantityNumber}
               onChange={(e) => setQuantityNumber(parseInt(e.target.value))}
             />
-            <h1 className="text-5xl text-black font-bold">numeros</h1>
+            <h1 className="text-5xl text-black font-bold  max-md:text-sm">numeros</h1>
           </div>
           <div className="flex items-center gap-6 w">
-            <h1 className="text-3xl text-black font-bold">Entre</h1>
+            <h1 className="text-3xl text-black font-bold  max-md:text-sm">Entre</h1>
             <Input
               min={1}
               type="number"
-              className="w-[60px] text-center"
+              className="w-10 text-center"
               value={minNumber}
               onChange={(e) => setFromNumber(parseInt(e.target.value))}
             />
-            <h1 className="text-3xl text-black font-bold">e</h1>
+            <h1 className="text-3xl text-black font-bold  max-md:text-sm">e</h1>
             <Input
               min={1}
               type="number"
-              className="w-[150px] text-center"
+              className="w-16 text-center"
               value={maxNumber}
               onChange={(e) => setAndNumber(parseInt(e.target.value))}
             />
