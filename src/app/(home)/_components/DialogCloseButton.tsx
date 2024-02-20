@@ -35,9 +35,15 @@ export function AlertDialogDemo({
             {numberRandom.map((e) => {
               let numberToString = e.toString().split("");
               return (
-                <div className="flex items-center gap-3">
+                <div
+                  className="flex items-center gap-3"
+                  key={`${e + new Date().toISOString()}`}
+                >
                   {numberToString.map((e: string) => (
-                    <div className="flex w-10 h-10 text-black font-bold bg-white items-center justify-center rounded-full">
+                    <div
+                      className="flex w-10 h-10 text-black font-bold bg-white items-center justify-center rounded-full"
+                      key={`${e + new Date().toISOString()}`}
+                    >
                       {e}
                     </div>
                   ))}
